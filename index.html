@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ugly Bird LLC</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:      #0e0e0e;
+      --surface: #161616;
+      --border:  #2a2a2a;
+      --text:    #d8d8d8;
+      --muted:   #666;
+      --accent:  #c8c8c8;
+      --max:     680px;
+    }
+
+    html { background: var(--bg); color: var(--text); }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 80px 24px 120px;
+    }
+
+    a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+    a:hover { color: #fff; }
+
+    /* ── Header ── */
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 48px;
+      margin-bottom: 64px;
+    }
+
+    .wordmark {
+      font-size: 13px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 28px;
+      font-weight: 600;
+      color: #fff;
+      letter-spacing: -0.02em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* ── Sections ── */
+    section {
+      margin-bottom: 64px;
+    }
+
+    section h2 {
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    /* ── Product card ── */
+    .product {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 24px 28px;
+    }
+
+    .product h3 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #fff;
+      letter-spacing: -0.01em;
+      margin-bottom: 8px;
+    }
+
+    .product .tag {
+      display: inline-block;
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      padding: 2px 7px;
+      margin-bottom: 14px;
+    }
+
+    .product p {
+      color: var(--text);
+      font-size: 14px;
+    }
+
+    /* ── Legal ── */
+    .legal-block {
+      border-top: 1px solid var(--border);
+      padding-top: 28px;
+    }
+
+    .legal-block + .legal-block {
+      margin-top: 40px;
+    }
+
+    .legal-block h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+
+    .legal-block p,
+    .legal-block li {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    .legal-block ul {
+      padding-left: 18px;
+    }
+
+    .legal-block li { margin-bottom: 6px; }
+
+    .legal-block .effective {
+      font-size: 12px;
+      color: #444;
+      margin-bottom: 16px;
+    }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding-top: 32px;
+      margin-top: 80px;
+      font-size: 12px;
+      color: #444;
+    }
+
+    footer a { color: #555; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <p class="wordmark">Ugly Bird LLC</p>
+    <h1>Independent software.</h1>
+    <p>A small studio making tools for creative work.</p>
+  </header>
+
+  <!-- Products -->
+  <section id="products">
+    <h2>Products</h2>
+    <div class="product">
+      <h3>Hocket</h3>
+      <span class="tag">Coming soon &mdash; iOS</span>
+      <p>
+        A music composition tool for iPhone. Build rhythmic compositions on a
+        visual canvas using circular sequencers, then connect them into
+        larger structures. No music theory required.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      For general inquiries, press, or licensing:
+      <a href="mailto:uglybirdllc@gmail.com">uglybirdllc@gmail.com</a>
+    </p>
+  </section>
+
+  <!-- Legal -->
+  <section id="legal">
+    <h2>Legal</h2>
+
+    <div class="legal-block" id="privacy">
+      <h3>Privacy Policy</h3>
+      <p class="effective">Effective date: July 1, 2026</p>
+
+      <p>
+        Ugly Bird LLC (&ldquo;we,&rdquo; &ldquo;us&rdquo;) operates the Hocket
+        iOS application. This policy describes how we handle information in
+        connection with our apps.
+      </p>
+
+      <p><strong style="color: var(--accent);">What we collect</strong></p>
+      <p>
+        Hocket does not collect, store, or transmit personal information.
+        The app operates entirely on your device. No account is required.
+      </p>
+
+      <p><strong style="color: var(--accent);">Feedback</strong></p>
+      <p>
+        If you submit in-app feedback, that submission is stored in Apple
+        CloudKit and is visible only to us. It may include a composition
+        snapshot and the text you provide. Submissions are voluntary.
+      </p>
+
+      <p><strong style="color: var(--accent);">Apple platforms</strong></p>
+      <p>
+        Apple may collect diagnostic and usage data through TestFlight and
+        the App Store. That collection is governed by
+        <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple&rsquo;s Privacy Policy</a>.
+        We do not control or receive that data in identifiable form.
+      </p>
+
+      <p><strong style="color: var(--accent);">Third parties</strong></p>
+      <p>
+        Hocket contains no advertising SDKs, analytics SDKs, or third-party
+        tracking of any kind.
+      </p>
+
+      <p><strong style="color: var(--accent);">Changes</strong></p>
+      <p>
+        If this policy changes materially, we will update the effective date
+        above and, where appropriate, provide notice in the app.
+      </p>
+
+      <p><strong style="color: var(--accent);">Contact</strong></p>
+      <p>
+        Privacy questions:
+        <a href="mailto:uglybirdllc@gmail.com">uglybirdllc@gmail.com</a>
+      </p>
+    </div>
+
+    <div class="legal-block" id="terms">
+      <h3>Terms of Service</h3>
+      <p class="effective">Effective date: July 1, 2026</p>
+
+      <p>
+        By downloading or using Hocket, you agree to these terms.
+      </p>
+
+      <p><strong style="color: var(--accent);">License</strong></p>
+      <p>
+        Ugly Bird LLC grants you a personal, non-exclusive, non-transferable
+        license to use Hocket on Apple devices you own or control, subject to
+        the <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">Apple Standard EULA</a>.
+      </p>
+
+      <p><strong style="color: var(--accent);">Your content</strong></p>
+      <p>
+        Compositions you create belong to you. We claim no ownership over
+        music or patterns you make with Hocket.
+      </p>
+
+      <p><strong style="color: var(--accent);">Bundled samples</strong></p>
+      <p>
+        Hocket includes audio samples from third-party sources. Each sample
+        bank is used under its respective open license (CC0, CC BY, or
+        similar). Attribution is provided within the app.
+      </p>
+
+      <p><strong style="color: var(--accent);">No warranty</strong></p>
+      <p>
+        Hocket is provided &ldquo;as is&rdquo; without warranty of any kind.
+        We are not liable for data loss, device issues, or any damages arising
+        from use of the app.
+      </p>
+
+      <p><strong style="color: var(--accent);">Changes</strong></p>
+      <p>
+        We may update these terms at any time. Continued use of the app after
+        an update constitutes acceptance of the revised terms.
+      </p>
+
+      <p><strong style="color: var(--accent);">Governing law</strong></p>
+      <p>
+        These terms are governed by the laws of the State of Indiana,
+        without regard to conflict-of-law provisions.
+      </p>
+
+      <p><strong style="color: var(--accent);">Contact</strong></p>
+      <p>
+        Questions about these terms:
+        <a href="mailto:uglybirdllc@gmail.com">uglybirdllc@gmail.com</a>
+      </p>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Ugly Bird LLC &mdash; Indiana &nbsp;&middot;&nbsp;
+      <a href="#privacy">Privacy</a> &nbsp;&middot;&nbsp;
+      <a href="#terms">Terms</a>
+    </p>
+  </footer>
+
+</body>
+</html>
